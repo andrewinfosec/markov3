@@ -7,7 +7,7 @@ A Ruby implementation of the [Markov chain
 algorithm](http://en.wikipedia.org/wiki/Markov_chain) with three-word phrases.
 The objective is to read a source text and use it to generate random text that
 "reads well", meaning the output is closer to proper-sounding English than
-gibberish. For example, using The Project Gutenberg version of _Second Variety_
+gibberish. For example, using the Project Gutenberg version of _Second Variety_
 by Philip K. Dick:
 
     $ ./markov3.rb < second_variety.txt | fmt | head 
@@ -22,7 +22,8 @@ by Philip K. Dick:
     _them_?" "I don't know. Now I'm not sure.
 
 Because of the uncertainty within the operation of the algorithm, successive
-runs will generate different output (within the set of total possibilities):
+runs will generate different output from within the set of total possible
+outputs, e.g.:
 
     $ ./markov3.rb < second_variety.txt | fmt | head 
     The Russian was uneasy. He knew something was wrong. He started
@@ -35,6 +36,7 @@ runs will generate different output (within the set of total possibilities):
     They may hear me but they may not want to take my chances. Maybe
     I could use a little
 
-By default the program will output 100 words of output. This can be overridden
-with the `-i` command line option.
+By default the program will generate 100 words of output. The `-i` command-line
+option will remove that restriction, potentially generating an infinite stream
+of text if a loop exists within the Markov chain.
 
