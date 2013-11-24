@@ -2,7 +2,7 @@
 #
 # Markov chain algorithm with three-word phrases.
 #
-infinite = ARGV.delete('-i') ? true : false
+opt_infinite = ARGV.delete('-i') ? true : false
 
 array = []
 hash  = {}
@@ -27,19 +27,19 @@ end
 # Print output using Markov algorithm
 #
 word1,word2 = array[0..1]
-print word1 + " " + word2 # print first two words
+print word1 + ' ' + word2
 
 count = 0
 loop do
   break if not hash[[word1, word2]]
 
   word3 = hash[[word1, word2]].sample
-  print " " + word3
+  print ' ' + word3
   word1 = word2
   word2 = word3
   
   count += 1
-  break if infinite != true and count >= 98 # 100 total words of output
+  break if opt_infinite == false and count >= 98 # 100 total words of output
 end
 
 print "\n"; $stdout.flush # for earlier use of print
