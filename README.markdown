@@ -1,10 +1,10 @@
-
 ### markov3: Markov chain algorithm with three-word phrases
 
 By Andrew Stewart ([http://andrewinfosec.com](http://andrewinfosec.com))
 
 A Ruby implementation of the [Markov chain
 algorithm](http://en.wikipedia.org/wiki/Markov_chain) with three-word phrases.
+
 The objective is to read a source text and use it to generate random text that
 "reads well", meaning the output is closer to proper-sounding English than
 gibberish. For example, using the Project Gutenberg version of _Second Variety_
