@@ -39,7 +39,7 @@ loop do
   word2 = word3
   
   count += 1
-  break if opt_infinite == false and count >= 98 # 100 total words of output
+  break if count >= 98 and opt_infinite == false # 100 total words of output
 end
 
 print "\n"; $stdout.flush # for earlier use of print
