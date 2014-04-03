@@ -36,7 +36,7 @@ outputs, e.g.:
     They may hear me but they may not want to take my chances. Maybe
     I could use a little
 
-By default the program will generate 100 words of output. The `-i` command-line
+By default the program will generate 100 words of output. The -i command-line
 option will remove that restriction, potentially generating an infinite stream
 of text if a loop exists within the Markov chain.
 
