@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby -w
 #
-# Markov chain algorithm with three-word phrases.
-#
+# Markov chain algorithm with three-word phrases
+
 opt_infinite = ARGV.delete('-i') ? true : false
 
 array = []
@@ -42,5 +42,4 @@ loop do
   break if count >= 98 and opt_infinite == false # 100 total words of output
 end
 
-print "\n"; $stdout.flush # for earlier use of print
-
+print "\n"; $stdout.flush # For earlier use of print
