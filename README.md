@@ -1,6 +1,6 @@
 ### markov3: Markov chain algorithm with three-word phrases
 
-By Andrew Stewart ([http://andrewinfosec.com](http://andrewinfosec.com))
+By Andrew Stewart ([https://andrewinfosec.com](https://andrewinfosec.com))
 
 A Ruby implementation of the [Markov chain
 algorithm](http://en.wikipedia.org/wiki/Markov_chain) with three-word phrases.
